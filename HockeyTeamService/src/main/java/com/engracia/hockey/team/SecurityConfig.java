@@ -46,7 +46,6 @@ public class SecurityConfig {
     }
 
     // In-memory user for demo purposes
-    // Username: admin, Password: hockey123
     @Bean
     public MapReactiveUserDetailsService userDetailsService(PasswordEncoder encoder) {
         UserDetails admin = User.builder()
